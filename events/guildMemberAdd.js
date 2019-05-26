@@ -1,2 +1,2 @@
 module.exports = member => {
-};
+};a
