@@ -160,4 +160,4 @@ client.on('error', e => {
 
 //client.login(process.env.TOKEN);
 //XiR
-client.login
+client.login(ayarlar.token);
