@@ -3,18 +3,20 @@ const Discord = require('discord.js');
 exports.run = (client, message, args) => {
 
   let pages = [
-              '**Bot Hakkında Kısa Bilgi**\n\n\n' + '``.davet`` Yazarak Bot İle İlgili Bağlantıları Görebilirsiniz. \nSunucunuzda Resimli Giriş Çıkışın Çalışması İçin ``simba`` Adında Bir Metin Kanalı Olmalıdır.',
-              '**Yenilikler**\n\n\n' + '``-``  .canlıdestek = Botun Sahibinden Bot İçin ``Destek Talebinde`` Bulunursun. \n``-``  .sunucunutanıt =  Sunucunuzu [Destek Sunucumda](https://discord.gg/k46tT4b) Tanıtırım. \n``-``  .kanalıkilitle = Komutu Kullandığınız Kanalda Belirttiğiniz Süre Boyunca Yazma Erişimine Kapatır.',
-              '**Kullanıcı Ve Eğlence**\n\n\n' + '``-``  .profil = Level Ve GP (Gelişim Puanı)’nızı Gösterir. \n``-``  .rastgeleresim = Rastgele ``Cool ve Rahatlatıcı`` Resim Atar. \n``-``  .vaporwave = Yazdığınız Metni Estetik Bir Şekilde Yazar. \n``-``  .balıktut = Rastgele Bir Balık Tutarsınız. \n``-``  .döviz = Euro Ve Doların ``Alış-Satış`` Fiyatını Gösterir. \n``-``  .atatürk = Atatürk’ün Bulunduğu Resimleri GİF Olarak Atar. \n``-``  .alkış  = Jokerin Alkış GİF’ini Atar. \n``-``  .atom = Atom Bombası GİF’i Atar. \n``-``  .rastgele = Rastgele Resim Atar. \n``-``  .kahkaha = Kahkaha Atarsınız. \n``-``  .ortaparmak = Orta Parmak GİF’i Atar. \n``-``  .korkut = Korkunç GİF Atar. \n``-``  .stresçarkı = Stres Çarkı Çevirirsiniz. \n``-``  .ben = Kullanıcı Resminizi Atar.',
-              '**Müzik**\n\n\n' + '``-``  +oynat = Youtubeda İstediğiniz Bir Şarkıyı Aratır Ve Oynatır. \n``-``  .duraklat = Oynatılan Şarkıyı Devam Etmek Üzere Durdurur. \n``-``  .devamet = Duraklatılan Şarkıyı Devam Ettir. \n``-``  .geç = Oynatılan Şarkıyı Geçer. \n``-``  .kuyruk = Kuyruk’ta Olan Müzikleri Gösterir. \n``-``  .çalan = Oynatılan Müziği Gösterir. \n``-``  .ses = Ses Seviyesini Ayarlarsınız.',
-              '**Çerçeve/Profil**\n\n\n ' + '``-``  +hacked = Profilinize ``hacked`` Efekti Verir. \n``-``  .triggered = Profilinize ``triggered`` Efekti Verir. \n``-``  .wasted = Profilinize ``wasted`` Efekti Verir. \n``-``  .winner = Profilinize ``winner`` Efekti Verir. \n``-``  .sniper = Profilinize ``sniper`` Efekti Verir. \n``-``  .hpbalance = Profilinize ``hypesquad balance`` Efekti Verir. \n``-``  .hpbravery = Profilinize ``hypesquad bravery`` Efekti Verir. \n``-``  .hpbrilliance = Profilinize ``hypesquad brilliance`` Efekti Verilir. \n``-``  .dcbughunter = Profilinize ``bug hunter`` Efekti Verir. \n``-``  .hpevent = Profilinize ``hypesquad`` Efekti Verir. \n``-``  .dcpartner = Profilinize ``partner`` Efekti Verir. \n``-``  .dcstaff = Profilinize ``staff`` Efekti Verir. \n``-``  .atatürk = Profilinize ``atatürk`` Efekti Verir.',
-              '**Bot Bilgi**\n\n\n' + '``-``  +davet = Bot İle İlgili Bağlantıları Görürsünüz. \n``-``  .ping = Botun Pingini Gösterir. \n``-``  .istatistik = Botun İstatistiklerini Gösterir.',
+                '**Başlangıç**\n\n\n' + ' BURAYADA YAZ İŞTE BİŞİLER \n \n \n  |  ➡ Bu Emojılere Tıklayarak Sayfayı Değiştirebilirsiniz',
+              '**Ana Komutlar**\n\n\n' + 'KOMUT İSMİ VE AÇIKLAMA ',
+              '**Yapımcı Komutları**\n\n\n' + ' KOMUT İSMİ VE AÇIKLAMA ',
+              '**Eğlence Komutları**\n\n\n' + 'KOMUT İSMİ VE AÇIKLAMA',
+              '**Müzik Komutları**\n\n\n' + 'KOMUT İSMİ VE AÇIKLAMA',
+              '**Yetkili Komutları**\n\n\n ' + 'KOMUT İSMİ VE AÇIKLAMA'
+             // '**Sayaç **\n\n\n ' + ' KOMUT İSMİ VE AÇIKLAMA ',
+              '**Yapımcım **\n\n\n ' + 'Yapımcım : **Enes** \nGeliştirici : **Enes**',
               ];
   let page = 1;
 
   const embed = new Discord.RichEmbed()
     .setColor('RANDOM')
-    .setThumbnail('https://cdn.discordapom/attachments/487719679868272689/488329963926192158/image0.png')
+    .setThumbnail('https://cdn.discordapp.com/avatars/510453815003054090/e764556833ceaa8099d38f8c1b6ea635.png?size=204')
     .setFooter(`Sayfa ${page} / ${pages.length}`)
     .setDescription(pages[page-1])
   message.channel.send(embed).then(msg => {
@@ -23,7 +25,7 @@ exports.run = (client, message, args) => {
   .then(r => {
     msg.react('➡')
 
-      //Filter
+      
       const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === message.author.id;
       const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === message.author.id;
 
@@ -48,6 +50,7 @@ exports.run = (client, message, args) => {
       })
 
     })
+   message.react(":white_check_mark: ")
   })
 };
 
