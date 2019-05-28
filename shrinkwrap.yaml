@@ -5,6 +5,7 @@ dependencies:
   jimp: 0.6.4
   mime: 2.4.3
   moment: 2.24.0
+  opusscript: 0.0.6
   quick.db: 6.3.2
   request: 2.88.0
   simple-youtube-api: 5.1.1
@@ -1404,6 +1405,10 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=
+  /opusscript/0.0.6:
+    dev: false
+    resolution:
+      integrity: sha512-F7nx1SWZCD5Rq2W+5Fx39HlkRkz/5Zqt0LglEB9uHexk8HjedDEiM+u/Y2rBfDFcS/0uQIWu2lJhw+Gjsta+cA==
   /pako/1.0.10:
     dev: false
     resolution:
@@ -1971,6 +1976,7 @@ specifiers:
   jimp: ^0.6.4
   mime: ^2.4.3
   moment: ^2.24.0
+  opusscript: ^0.0.6
   quick.db: ^6.3.2
   request: ^2.88.0
   simple-youtube-api: ^5.1.1

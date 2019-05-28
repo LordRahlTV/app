@@ -19,7 +19,8 @@
     "quick.db": "^6.3.2",
     "jimp": "^0.6.4",
     "simple-youtube-api": "^5.1.1",
-    "ytdl-core": "^0.29.2"
+    "ytdl-core": "^0.29.2",
+    "opusscript": "^0.0.6"
   },
   "engines": {
     "node": "8.x"
