@@ -6,8 +6,9 @@ exports.run = async (client, message, params) => {
   message.delete();
   const embed = new Discord.RichEmbed()
   .setTitle("» BK BOT | Canlı Destek")
-  .setDescription("**Canlı Desteği kullandğın için teşekkür ederiz, Seninle ekibim ilgilenicektir lütfen bekle!**")
-  .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin https://discord.gg/y3XJhF")
+  .setDescription("**Canlı Desteği kullandğın için teşekkür ederiz, Seninle ekibim ilgilenicektir lütfen bekle Çevik Kuvvet
+#6420!**")
+  .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin https://discord.gg/fdgZNNr")
  message.channel.send(embed)
       const invite = new Discord.RichEmbed()
   .setAuthor("» Canlı Destek | Talep")
