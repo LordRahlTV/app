@@ -51,19 +51,19 @@ errors: ['time'],
             message.guild.createChannel(`mod-log`);
                    message.guild.createChannel(`mod-log`);
                         message.guild.createChannel(`mod-log`);
-            message.guild.createChannel(`💎-adalet-bakanliği`);
+             message.guild.createChannel(`💎-adalet-bakanliği`);
             message.guild.createChannel(`💎-i̇ç-i̇şleri̇-bakanliği`);
-            message.guild.createChannel(`💎-savunma-bakanliği`);
+              message.guild.createChannel(`💎-savunma-bakanliği`);
             message.guild.createChannel(`💎-dis-i̇şleri̇-bakanliği`);
-            message.guild.createChannel(`💎-ulaşdirma-bakanliği`);
+               message.guild.createChannel(`💎-ulaşdirma-bakanliği`);
             message.guild.createChannel(`💎-sağlik-bakanliği`);
-            message.guild.createChannel(`💎-mali̇ye-bakanliği`);
-          message.guild.createChannel(`SİLAHLI GÜÇLER`, 'category');
+              message.guild.createChannel(`💎-mali̇ye-bakanliği`);
+             message.guild.createChannel(`SİLAHLI GÜÇLER`, 'category');
             message.guild.createChannel(`⚔-türk-si̇lahli-kuvetleri̇`);
-            message.guild.createChannel(`⚔-emli̇yet-genel-müdürlüğü`);
+               message.guild.createChannel(`⚔-emli̇yet-genel-müdürlüğü`);
           message.guild.createChannel(`YARGI`, 'category');
             message.guild.createChannel(`📘mahkeme-salonu`);
-            message.guild.createChannel(`📘dava-açma`);
+              message.guild.createChannel(`📘dava-açma`);
 
           message.guild.createChannel(`Ses Kanalları`, 'category')
         message.guild.createChannel(`╠ ● ɢeɴel ѕoнвeт ①`, 'voice');
