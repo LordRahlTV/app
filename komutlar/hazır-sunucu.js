@@ -34,3 +34,23 @@ errors: ['time'],
 
 
   
+
+
+
+        message.channel.send(`Gerekli Kanalları Oluşturdum.`);
+    });
+});
+};
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: [],
+  permLevel: 3
+};
+
+exports.help = {
+  name: 'hazır-sunucu',
+  description: 'Bot İçin gerekli kanlları kurar.',
+  usage: 'g!kurulum'
+};
