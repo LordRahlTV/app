@@ -47,7 +47,7 @@ errors: ['time'],
                     message.guild.createChannel(`💎-cumhur-başkani`);
             message.guild.createChannel(`💎-cumhur-başkani-özel-kalem`);
                      message.guild.createChannel(`💎-cumhur-başkani-yardımcısı`);
-         message.guild.createChannel(`BAKANLIKLA
+         message.guild.createChannel(`BAKANLIKLA`, 'category');
              message.guild.createChannel(`💎-adalet-bakanliği`);
             message.guild.createChannel(`💎-i̇ç-i̇şleri̇-bakanliği`);
               message.guild.createChannel(`💎-savunma-bakanliği`);
