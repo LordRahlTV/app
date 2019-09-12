@@ -47,10 +47,7 @@ errors: ['time'],
                     message.guild.createChannel(`💎-cumhur-başkani`);
             message.guild.createChannel(`💎-cumhur-başkani-özel-kalem`);
                      message.guild.createChannel(`💎-cumhur-başkani-yardımcısı`);
-         message.guild.createChannel(`BAKANLIKLAR`, 'category');
-            message.guild.createChannel(`mod-log`);
-                   message.guild.createChannel(`mod-log`);
-                        message.guild.createChannel(`mod-log`);
+         message.guild.createChannel(`BAKANLIKLA
              message.guild.createChannel(`💎-adalet-bakanliği`);
             message.guild.createChannel(`💎-i̇ç-i̇şleri̇-bakanliği`);
               message.guild.createChannel(`💎-savunma-bakanliği`);
@@ -93,6 +90,6 @@ exports.conf = {
 
 exports.help = {
   name: 'hazır-sunucu',
-  description: 'Bot İçin gerekli kanlları kurar.',
+  description: 'Bot İçin gerekli kanlları kurar2.',
   usage: 'g!kurulum'
 };
