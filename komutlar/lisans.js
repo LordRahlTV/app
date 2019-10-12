@@ -1,8 +1,6 @@
-                                 Apache Lisansı
-                           Sürüm 2.0, Ocak 2004
-                        http://www.apache.org/licenses/
-
-   KULLANIM ŞART VE KOŞULLARI, ÜREME VE DAĞITIM
+                                 LordRahl Lisansıd
+                           Sürüm 2.0, Ocak 2019
+                        LordRahlTÜMHAKLARI GİZLİDİR   KULLANIM ŞART VE KOŞULLARI, ÜREME VE DAĞITIM
 
    1. Tanımlar.
 
