@@ -32,11 +32,6 @@ errors: ['time'],
         message.guild.createChannel(`  ♫ Müzik Odası`, 'voice');
           message.guild.createChannel(`╠ ● βεκlεʍε øδα$ı`, 'voice');
 
-
-  
-
-
-
         message.channel.send(`Gerekli Kanalları Oluşturdum.`);
     });
 });
