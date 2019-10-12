@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+
 const client = new Discord.Client();
 const ayarlar = require('../ayarlar.json');
 
@@ -14,7 +14,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: NASA YAZILIM  **STARKTOM**\n\n_**BOTU EKLEMEK İÇİN LİNK:**_\n\nhttps://discordapp.com/oauth2/oauth2/authorize?client_id=620068319457968131&scope=bot&permissions=8 \n_**Linkler:**_\n\n**NASA YAZILIM** sunucusunun davet linki: https://discord.gg/R5R8mzm \n\n**:copyright: 2018 [NASA] Yazılım**');
+    .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: LordRahl YAZILIM  ** LordRahl **\n\n_**BOTU EKLEMEK İÇİN LİNK:**_\n\nhttps://discordapp.com/oauth2/oauth2/authorize?client_id=620068319457968131&scope=bot&permissions=8 \n_**Linkler:**_\n\n**LordRahl YAZILIM** sunucusunun davet linki: https://discord.gg/R5R8mzm \n\n**:copyright: 2018 [LordRahl] Yazılım**');
     return message.author.sendEmbed(pingozel)
 };
 
