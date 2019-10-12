@@ -1,6 +1,6 @@
                                  LordRahl Lisansıd
                            Sürüm 2.0, Ocak 2019
-                        LordRahlTÜMHAKLARI GİZLİDİR   KULLANIM ŞART VE KOŞULLARI, ÜREME VE DAĞITIM
+                        LordRahlTÜMHAKLARI GİZLİDİR   KULLANIM ŞART VE KOŞULLARI, ÜREME VE DAĞITIM  
 
    1. Tanımlar.
 
