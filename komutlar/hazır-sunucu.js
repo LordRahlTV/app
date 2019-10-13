@@ -52,5 +52,5 @@ exports.conf = {
 exports.help = {
   name: 'hazır-sunucu',
   description: 'Bot İçin gerekli kanlları kurar.',
-  usage: 'g!kurulum'
+  usage: '!kurulum'
 };
