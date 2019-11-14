@@ -11,9 +11,9 @@ module.exports = client => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: ${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("online");
    var oyun = [
-        "Created By LordRahl",
+        "Created By ＡＩＳ. ＥＲＥＮ",
         "7/24 Aktif BOT!",  
-        "k!davet + Botumuzu ekleyin"
+        "?davet + Botumuzu ekleyin"
   
     ];
 
