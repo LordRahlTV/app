@@ -1,3 +1,4 @@
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const ayarlar = require('../ayarlar.json');
 
@@ -10,7 +11,7 @@ exports.run = (client, message) => {
   .setFooter('ＡＩＳ. ＥＲＥＮ#2944  | Kertenkele#6420', client.user.avatarURL)
   .setThumbnail("")
   .setTimestamp()
-  .addField("» Linkler", `[WEB SİTE](https://horrorspideryt.blogspot.com)`+ "**\n**"+`[Destek Sunucusu](https://discord.gg/mYm24JK)`, false)
+  .addField("» Linkler", `[WEB SİTE]()`+ "**\n**"+`[Destek Sunucusu](https://discord.gg/mYm24JK)`, false)
   .setURL('https://bit.ly/2Pz3c3D')
   	.setThumbnail(client.user.avatarURL);
 
