@@ -1,31 +1,31 @@
-const Discord = require('discord.js');
 const client = new Discord.Client();
+const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message) => {
-  if (message.channel.type !== 'dm') {
-    const ozelmesajkontrol = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setTimestamp()
+  const embed = new Discord.RichEmbed()
+  .setTitle("Beni sunucuna davet etmek için tıkla.")
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Özel mesajlarını kontrol et. :postbox:');
-    message.channel.sendEmbed(ozelmesajkontrol) }
-	const pingozel = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setTimestamp()
-    .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Link: https://discordapp.com/oauth2/authorize?client_id=620068319457968131&scope=bot&permissions=8');
-    return message.author.sendEmbed(pingozel)
+  .setColor("RANDOM")
+  .setDescription("**Bot yapımıcısı:** <@326100571620638721>")
+  .setFooter('ＡＩＳ. ＥＲＥＮ#2944  | Kertenkele#6420', client.user.avatarURL)
+  .setThumbnail("")
+  .setTimestamp()
+  .addField("» Linkler", `[WEB SİTE](https://horrorspideryt.blogspot.com)`+ "**\n**"+`[Destek Sunucusu](https://discord.gg/mYm24JK)`, false)
+  .setURL('https://bit.ly/2Pz3c3D')
+  	.setThumbnail(client.user.avatarURL);
+
+  message.channel.send({embed});
 };
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['botu ekle', 'botu davet et', 'botuekle', 'invite'],
+  aliases: [],
   permLevel: 0
 };
 
 exports.help = {
   name: 'davet',
-  description: 'Botun davet linkini gönderir.',
+  description: 'Bot ile ilgili bilgi verir.',
   usage: 'davet'
 };
