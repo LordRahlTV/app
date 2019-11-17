@@ -1,40 +1,50 @@
-const Discord = require('discord.js');
-const ayarlar = require('../ayarlar.json');
+const Discord = require("discord.js");
 
-var prefix = ayarlar.prefix;
+module.exports.run = async (bot, message, args) => {
+    let serverembed = new Discord.RichEmbed()
+    .setDescription("**📌 LorD Rahl der BOT Yardım Komutları 📌**")
+    .setColor("RANDOM")
+    .addField("**⭐️ Genel Komutlar ⭐️**", '*Genel komutlar burada.*')
+    .addField(`Şikayet etmek için:`, '**?rapor <Kişi> <Sebep>**')
+    .addField(`Tavsiye vermek için:`, '**?Tavsiye <tavsiyeniz>**')
+    .addField(`Bot yapımcısını öğrenmek için:`, '**?Yapımcım**')
+    .addField(`Tarihi öğrenmek için:`, '**?Tarih**')
+    .addField(`Saati öğrenmek için:`, '**?Saat**')
+    .addField(`**💣 Admin Komutları 💣**`, '*Adminlerin kullanabileceği komutlar burada.*')
+    .addField(`Bir kullanıcıyı yasaklamak için:`, '**?Ban <Kullanıcı> <Sebep>**')
+    .addField(`Bir kullanıcıyı susturmak için:`, '**?sustur <Kullanıcı> <Sebep>**')
+    .addField(`Bir kullanıcıyı atmak için:`, '**?kick <Kullanıcı> <Sebep>**')
+    .addField(`Bir kullanıcının yasağını açmak için:`, '**?UnBan <Kullanıcı> <Sebep>**')
+    .addField(`Botun sunucudaki herkese özelden mesaj atması için:`, '**?DmDuyuru <Mesaj>**')
+    .addField(`**💡 Kullanıcı Komutları 💡**`, 'Kullanıcıların kullanabilecieği komutlar burada.')
+    .addField(`Avatarınızı görmek için:`, '**?Avatarım**')
+    .addField(`Yetkilerinizi öğrenmek için:`, '**?Yetkilerim**')
+    .addField(`**🔑 Özel Komut Sistemi 🔑**`, '*Özel komut oluşturmak için gereken kodlar*')
+    .addField(`Özel komut eklemek için:`, '**?özelekle <Komut> <Gönderilecek Şey>**')
+    .addField(`Özel komut silmek için:`, '**?özelsil <Komut>**')
+    .addField(`**🕹 Sunucu Komutları 🕹**`, '*Sunucu ile ilgili komutlar burada.*')
+    .addField(`Sunucu ayarlarını gösterir:`, '**?Ayarlar**')
+    .addField(`Botun davet linkini atar:`, '**?Davet**')
+    .addField(`Otorol sistemini ayarlamanızı sağlar:`, '**?Otorol <@rol>**')
+    .addField(`Radyo çalmasını sağlar:`, '**?Radyo <FM adı> <Örnek fenomenfm>**')
+    .addField(`🔥 **Bilgi** 🔥 Eğlence komutlarını öğrenmek için`, '**?Eglence** yazabilirsiniz')
 
-exports.run = (client, message, params) => {
-
-  if (!params[0]) {
-    const commandNames = Array.from(client.commands.keys());
-    const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
-    message.author.sendCode('asciidoc', `= Komut Listesi =\n\n[Komut hakkında bilgi için ${ayarlar.prefix}yardım <komut adı>]\n\n${client.commands.map(c => `${ayarlar.prefix}${c.help.name}${' '.repeat(longest - c.help.name.length)} :: ${c.help.description}`).join('\n')}`);
-  if (message.channel.type !== 'dm') {
-    const ozelmesajkontrol = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setTimestamp()
-    .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Özel mesajlarını kontrol et. :postbox:');
-    message.channel.sendEmbed(ozelmesajkontrol) }
-  } else {
-    let command = params[0];
-    if (client.commands.has(command)) {
-      command = client.commands.get(command);
-      message.author.sendCode('asciidoc', `= ${command.help.name} = \n${command.help.description}\nDoğru kullanım: ` + prefix + `${command.help.usage}`);
-    }
-  }
-
-};
+    
+     message.channel.send(serverembed);
+}
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['h', 'halp', 'help', 'y'],
-  permLevel: 0
+  aliases: ['h', 'help', 'y'],
+ 
+  permLevel: 0,
+  kategori: 'genel'
 };
 
 exports.help = {
   name: 'yardım',
-  description: 'Tüm komutları gösterir.',
-  usage: 'yardım [komut]'
+  category: 'genel',
+  description: 'Tüm komutları listeler.',
+  usage: 'yardım veya yardım <komut adı>'
 };
