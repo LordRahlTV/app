@@ -1,32 +1,24 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "Lion",
+  "name": "discord-bos-altyapi",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "bot.js",
+  "description": "DJSV12 Boş Altyapı",
+  "main": "main.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node main.js"
   },
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "chalk": "^2.4.2",
-    "moment": "^2.24.0",
-    "quick.db": "^6.3.2",
-    "jimp": "^0.8.1",
-    "request": "^2.88.0"
+    "discord.js": "^12.2.0"
   },
   "engines": {
-    "node": "8.x"
+    "node": "12.x"
   },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
+
   "license": "MIT",
   "keywords": [
     "node",
     "glitch",
-    "express"
+    "express",
+    "Piece",
+    "Serendia"
   ]
 }
