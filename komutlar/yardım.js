@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
   .setColor('#2667FF')
   .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Genel').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
-        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
+        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=821422097217617940&permissions=8&scope=bot)` + "** | **" + `[ ]`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
               return message.channel.send(Genel)
          
        
@@ -24,7 +24,7 @@ exports.run = async (client, message, args) => {
   .setColor('#2667FF')
   .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Sunucu').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
-        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
+        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=821422097217617940&permissions=8&scope=bot)` + "** | **" + `[Destek Sunucusu]`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
               return message.channel.send(Sunucu)
          
       
@@ -38,7 +38,7 @@ exports.run = async (client, message, args) => {
   .setColor('#2667FF')
   .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Eğlence').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
-        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
+        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=821422097217617940&permissions=8&scope=bot)` + "** | **" + `[Destek Sunucusu]`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
    return message.channel.send(Eğlence)
   
       
@@ -51,7 +51,7 @@ exports.run = async (client, message, args) => {
   .setColor('#2667FF')
   .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Moderasyon').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
-        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
+        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=821422097217617940&permissions=8&scope=bot)` + "** | **" + `[Destek Sunucusu]`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
    return message.channel.send(Moderasyon)
              
        
@@ -64,7 +64,7 @@ exports.run = async (client, message, args) => {
    .setColor('#2667FF')
    .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Sahip').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
-         .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
+         .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=821422097217617940&permissions=8&scope=bot)` + "** | **" + `[Destek Sunucusu]`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
     return message.channel.send(Sahip)
               
         
@@ -79,13 +79,13 @@ exports.run = async (client, message, args) => {
   .setColor('#FFFB05')
   .setDescription(`**Örnek Kullanım:** \`${prefix}yardım Kategori\` \n **Örnek:** \`${prefix}yardım Genel\``)
   .addField('Kategoriler:', `
-  **[${prefix}yardım Genel](https://discord.gg/2vPdmYz)** 
-  **[${prefix}yardım Eğlence](https://discord.gg/2vPdmYz)**
-  **[${prefix}yardım Moderasyon](https://discord.gg/2vPdmYz)**
-  **[${prefix}yardım Sunucu](https://discord.gg/2vPdmYz)**
-  **[${prefix}yardım Sahip](https://discord.gg/2vPdmYz)**
+  **[${prefix}yardım Genel]** 
+  **[${prefix}yardım Eğlence]**
+  **[${prefix}yardım Moderasyon]**
+  **[${prefix}yardım Sunucu]**
+  **[${prefix}yardım Sahip]**
   `)
-  .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
+  .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=821422097217617940&permissions=8&scope=bot)` + "** | **" + `[Destek Sunucusu]`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
 
   .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
   message.channel.send(embed)
